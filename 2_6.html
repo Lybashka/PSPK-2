@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	var n = +prompt('Введите число Фибоначчи','');
+	var ss = 0;
+	function fib(n) {
+  var n1 = 1;
+  var n2 = 1;
+	if ( n==1 || n==2) {
+	return 1;
+	}
+	else {
+		for (var i = 3; i <= n; i++) {
+		var f = n1 + n2;
+		n1 = n2;
+		n2 = f;
+		}
+		return f;
+	}
+	}
+	alert(fib(n));
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	var x = +prompt('Введите число','');
+	var n = +prompt('Введите степень числа','');
+	if (Number.isInteger(n) == true && n > 1) {
+	function pow(x,n){
+		var xx=x;
+		for ( var i=2;i<=n;i++){
+			xx=x*xx;
+		}
+		return xx;
+	}
+	alert(pow(x,n));
+	}
+	else {
+	alert('Введите степень в виде целого числа больше 1');
+	}
+  </script>
+</body>
+</html>

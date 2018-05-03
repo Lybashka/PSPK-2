@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+	var n = +prompt('Введите число факториала','');
+	var ss = 0;
+	function factorial(n){
+	if (n < 0){
+		alert('Факториал вычисляется только для целых неотрицательных чисел');
+	} else {
+		if (n == 0 || n==1){
+			return 1;
+		} 
+		else {
+			ss = n * factorial(n-1);
+			return ss;
+	}
+	
+	}
+	}
+	alert(factorial(n));
+  </script>
+</body>
+</html>
